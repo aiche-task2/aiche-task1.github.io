@@ -30,9 +30,22 @@ Give a feedback for our website: <br>
 </textarea>
 <br><br>
 
-<input type="hidden" value="http://aiche-task1.github.io">
 <input type="submit" value="Submit" name="Submit" />
 <input type="reset" value="Reset" name="Reset" />
   
+
+    
+    <?php
+if(isset($_POST['submit'])){
+$name=$_POST["name"];
+$email=$_POST["email"];
+
+echo $name;
+echo $email;
+}
+
+?>
+
 </body>
 </html>
+
